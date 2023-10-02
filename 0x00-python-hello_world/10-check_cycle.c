@@ -11,9 +11,10 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *t, *g;
+	listint_t *t = list, *g;
 
-	t = list;
+	if (!list)
+		return (0);
 	while (t)
 	{
 		g = t;
