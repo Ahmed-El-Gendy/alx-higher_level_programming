@@ -11,20 +11,18 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *t = list, *g;
+	listint_t *t = list, *g = list;
 
 	if (!list)
 		return (0);
-	while (t)
+	while (t && g)
 	{
-		g = t;
-		while (g)
-		{
-			if (g->next == t)
-				return (1);
-			g = g->next;
-		}
+		if (!g->next)
+			break;
 		t = t->next;
+		g = g->next->next;
+		if (t == g)
+			return (1);
 	}
 	return (0);
 }
