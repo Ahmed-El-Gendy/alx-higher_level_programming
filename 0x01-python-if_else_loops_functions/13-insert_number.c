@@ -34,9 +34,6 @@ listint_t *insert_node(listint_t **head, int n)
 		}
 		temp = temp->next;
 	}
-	temp->n = n;
-	temp->next = NULL;
-	temp->next = list;
-	free(list);
-	return (NULL);
+	list = add_nodeint_end(head, n);
+	return (list);
 }
