@@ -14,11 +14,5 @@ if __name__ == "__main__":
     if l[2] != '+' and l[2] != '-' and l[2] != '*' and l[2] != '/':
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    if l[2] == '+':
-        print("{} + {} = {}".format(a, b, add(a, b)))
-    elif l[2] == '-':
-        print("{} - {} = {}".format(a, b, sub(a, b)))
-    elif l[2] == '*':
-        print("{} * {} = {}".format(a, b, mul(a, b)))
-    else:
-        print("{} / {} = {}".format(a, b, div(a, b)))
+    ist = {"+": add, "-": sub, "*": mul, "/": div}
+    print("{} {} {} = {}".format(a, l[2], b, ist[l[2]](a, b)))
