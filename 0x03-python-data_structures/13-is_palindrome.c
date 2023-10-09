@@ -14,7 +14,7 @@ int is_palindrome(listint_t **head)
 	const listint_t *current;
 
 	n = 0;
-	arr = malloc(sizeof(int) * 50000);
+	arr = malloc(sizeof(int) * 5000);
 	current = *(head);
 	while (current != NULL)
 	{
