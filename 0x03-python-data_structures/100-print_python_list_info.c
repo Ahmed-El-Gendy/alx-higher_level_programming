@@ -10,6 +10,7 @@
 void print_python_list_info(PyObject *p)
 {
 	Py_ssize_t size;
+	PyObject *item;
 	const char *type;
 
 	size = PyList_Size(p);
@@ -17,7 +18,7 @@ void print_python_list_info(PyObject *p)
 	printf("[*] Allocated = %ld\n", ((PyListObject *)p)->allocated);
 	for (Py_ssize_t i = 0; i < size; i++)
 	{
-		PyObject *item = PyList_GetItem(p, i);
+		item = PyList_GetItem(p, i);
 		type_name = Py_TYPE(item)->tp_name;
 		printf("Element %ld: %s\n", i, type_name);
 	}
