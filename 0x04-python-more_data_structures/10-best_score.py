@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    ma = -1
-    v = "st"
-    if len(a_dictionary) == 0:
+    if not a_dictionary:
         return None
+    v = None
+    ma = None
     for i in a_dictionary:
-        if a_dictionary[i] > ma:
+        if not ma or (a_dictionary[i] > ma):
             ma = a_dictionary[i]
             v = i
     return v
