@@ -70,4 +70,4 @@ class Rectangle:
     def __del__(self):
         """delete"""
         print("Bye rectangle...")
-        type(self).numper += 1
+        type(self).numper -= 1
