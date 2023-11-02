@@ -35,3 +35,25 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """area"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """pre"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return self.__width * 2 + self.__height * 2
+
+    def __str__(self):
+        """return list"""
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+
+        pr = []
+        for i in range(self.__height):
+            for j in range(self.__width):
+                pr.append('#')
+            pr.append("\n")
+        return ("".join(pr))
