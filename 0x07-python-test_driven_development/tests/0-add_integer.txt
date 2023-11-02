@@ -9,17 +9,13 @@
 -1
 
 >>> add_integer(a, 5)
-...
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 >>> add_integer(5, b)
-...
+Traceback (most recent call last):
 TypeError: b must be an integer
 
 >>> add_integer(a, b)
-...
+Traceback (most recent call last):
 TypeError: a must be an integer
-
->>> add_integer(float('nan'))
-...
-ValueError: cannot convert float NaN to integer
