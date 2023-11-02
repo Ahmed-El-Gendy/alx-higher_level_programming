@@ -55,5 +55,6 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 pr.append('#')
-            pr.append("\n")
+            if i != self.height - 1:
+                pr.append("\n")
         return ("".join(pr))
