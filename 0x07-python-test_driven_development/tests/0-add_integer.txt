@@ -19,3 +19,7 @@ TypeError: b must be an integer
 >>> add_integer(a, b)
 ...
 TypeError: a must be an integer
+
+>>> add_integer(float('nan'))
+...
+ValueError: cannot convert float NaN to integer
