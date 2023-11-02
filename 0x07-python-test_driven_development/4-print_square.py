@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def print_square(size):
 
-    if not isinstance(size, (int, float)) or size < 0 or size != int(size):
+    if not isinstance(size, (int, float)) or size != int(size):
         raise TypeError("size must be an integer")
-    if not isinstance(size, (int, float)):
+    if size < 0:
         raise ValueError("size must be >= 0")
 
     size = int(size)
