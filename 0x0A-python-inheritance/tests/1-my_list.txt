@@ -23,3 +23,8 @@ NameError: name 'my_list1' is not defined
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'list' object has no attribute 'print_sorted'
+
+>>> a = [2, 4, 1]
+>>> my_list = MyList(a)
+>>> my_list.print_sorted()
+[1, 2, 4]
