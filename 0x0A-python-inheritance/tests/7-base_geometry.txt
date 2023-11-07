@@ -39,4 +39,9 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", (9,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
 
