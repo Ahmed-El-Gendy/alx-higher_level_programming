@@ -5,10 +5,10 @@
 class MyInt(int):
     """invert int"""
 
-    def __fi__(self, value):
+    def __feq__(self, value):
         """== to !="""
         return self.read != value
 
-    def __se__(self.value):
+    def __ne__(self.value):
         """!= to =="""
         return self.real == value
