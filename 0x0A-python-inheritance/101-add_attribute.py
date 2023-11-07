@@ -2,7 +2,6 @@
 """add attribute"""
 
 
-
 def add_attribute(obj, att, value):
     """Add a new attribute to an object"""
 
