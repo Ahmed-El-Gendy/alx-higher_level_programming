@@ -20,6 +20,6 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """print"""
         string = "[" + str(self.__class__.__name__)
-        string += "]" + str(self.__width)
+        string += "] " + str(self.__width)
         string += "/" + str(self.__height)
         return string
