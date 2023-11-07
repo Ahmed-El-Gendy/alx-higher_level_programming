@@ -3,8 +3,9 @@
 
 
 
-def add_attribute(obj, attribute , val):
-    """add attribute to obj"""
-    if not isinstance(obj, type):
-    raise TypeError("can't add new attribute")
-    obj.__dict__[attribute] = val
+def add_attribute(obj, att, value):
+    """Add a new attribute to an object"""
+
+    if not hasattr(obj, "__dict__"):
+        raise TypeError("can't add new attribute")
+    obj.__dict__[att] = value
