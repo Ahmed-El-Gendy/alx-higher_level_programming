@@ -7,8 +7,8 @@ class MyInt(int):
 
     def __eq__(self, value):
         """== to !="""
-        return not super().__eq__(value)
+        return self.real != value
 
-    def __se__(self, value):
+    def __ne__(self, value):
         """!= to =="""
-        return not super().__ne__(value)
+        return self.real == value
