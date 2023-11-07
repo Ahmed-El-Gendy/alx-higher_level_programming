@@ -5,7 +5,7 @@
 class MyInt(int):
     """invert int"""
 
-    def __feq__(self, value):
+    def __eq__(self, value):
         """== to !="""
         return self.read != value
 
