@@ -1,2 +1,2 @@
--- displays number of records with id of 89
+-- script that displays the number of records
 SELECT count(*) FROM first_table WHERE `id` = 89;
