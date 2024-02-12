@@ -1,16 +1,10 @@
 #!/usr/bin/node
-let x = 1;
 function rec (a) {
-  if (a === 1) {
-    return;
+  if (a === 1 || isNaN(a)) {
+    return 1;
   }
-  x *= a;
-  rec(a - 1);
+  else {
+    return a * rec(a - 1);
+  }
 }
-if (!isNaN(process.argv[2])) {
-  x = parseInt(process.argv[2]);
-  rec(x - 1);
-  console.log(x);
-} else {
-  console.log(1);
-}
+console.log(rec(parseInt(process.argv[2])));
