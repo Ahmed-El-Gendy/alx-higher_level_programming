@@ -2,8 +2,7 @@
 function rec (a) {
   if (a === 1 || isNaN(a)) {
     return 1;
-  }
-  else {
+  } else {
     return a * rec(a - 1);
   }
 }
