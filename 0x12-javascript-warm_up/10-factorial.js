@@ -1,6 +1,6 @@
 #!/usr/bin/node
 let x = 1;
-function rec (a) {
+function rec(a) {
   if (a === 1) {
     return;
   }
