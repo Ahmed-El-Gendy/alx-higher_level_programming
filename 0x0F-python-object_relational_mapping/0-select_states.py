@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """list states"""
 import MySQLdb
-from sys import aggv
+from sys import argv
 
 # The main
 if __name__ == '__main__':
