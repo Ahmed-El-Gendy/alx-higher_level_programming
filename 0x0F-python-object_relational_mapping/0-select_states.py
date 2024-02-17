@@ -3,7 +3,11 @@ import MySQLdb
 from sys import aggv
 
 if __name__ == '__main__':
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1], password=argv[2], db=argv[3])
+    a1 = argv[1]
+    a2 = argv[2]
+    a3 = argv[3]
+    ho = "localhost"
+    db = MySQLdb.connect(host=ho, port=3306, user=a1, password=a2, db=a3)
 
     c = db.cursor()
     c.execute("SELECT * FROM states")
