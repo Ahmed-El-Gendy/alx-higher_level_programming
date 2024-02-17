@@ -3,6 +3,7 @@
 import MySQLdb
 from sys import aggv
 
+# The main
 if __name__ == '__main__':
     a1 = argv[1]
     a2 = argv[2]
