@@ -20,7 +20,7 @@ if __name__ == '__main__':
     r = c.fetchall()
     arr = []
     for i in r:
-        j.append(i[1])
+        arr.append(i[1])
     print(", ".join(arr))
     c.close()
     db.close()
