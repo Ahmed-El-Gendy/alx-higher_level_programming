@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const request = require('request');
-const star_uri = process.argv[2]
+const star_uri = process.argv[2];
 let cnt = 0;
 
 request.get(star_uri, function (__err, __res, body) {
