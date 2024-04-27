@@ -13,9 +13,9 @@ request.get(url, function (err, __res, body) {
     todos.forEach(todo => {
       if (todo.completed) {
         if (completedTask[todo.userId]) {
-            completedTask[todo.userId]++;
+          completedTask[todo.userId]++;
         } else {
-            completedTask[todo.userId] = 1;
+          completedTask[todo.userId] = 1;
         }
       }
     });
